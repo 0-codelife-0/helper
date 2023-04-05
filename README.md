@@ -10,6 +10,13 @@ The recommended way to install composer packages is:
 composer require codelife/codelife-helpers
 ```
 
+If above code does not work try: 
+```shell
+composer require codelife/codelife-helpers:dev-main
+// OR
+composer require codelife/codelife-helpers:dev-master
+```
+
 ### Setting up
 
 Publish migrations using below command: 
