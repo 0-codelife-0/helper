@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\JsonResponse;
+use Carbon\Carbon;
 
 class Helper {
     protected $model;
@@ -27,7 +28,9 @@ class Helper {
             'user_id' => $user_id,
             'table' => ucfirst($model->getTable()),
             'activity' => $activity == null ? 'A '.request()->getMethod().' has been made.' : $activity,
-            'json_data' => json_encode($model->getAttributes(), JSON_PRETTY_PRINT)
+            'json_data' => json_encode($model->getAttributes(), JSON_PRETTY_PRINT),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
     }
 

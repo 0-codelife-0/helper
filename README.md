@@ -13,7 +13,7 @@ composer require codelife/codelife-helpers
 If above code does not work try: 
 ```shell
 composer require codelife/codelife-helpers:dev-main
-// OR
+#  OR
 composer require codelife/codelife-helpers:dev-master
 ```
 
@@ -28,14 +28,18 @@ Then, add the code below to load this package as one of the providers
 Go into your config/app.php directory then paste the following in providers group
 
 ```php
-....Above providers
+// ....Above providers
 Codelife\CodelifeHelpers\Providers\HelperServiceProvider::class,
-....Below Providers
+// ....Below Providers
 ```
 
 Execute artisan command migrate using the below commands to migrate Helpers activity logger table
 ```shell
+# If you wish to run all your migrations
 php artisan migrate
+# Running activity logger's migration only
+php artisan migrate --path=/database/migrations/2023_04_03_074638_create_activity_logs_table.php
+
 ```
 
 ### Usage 
