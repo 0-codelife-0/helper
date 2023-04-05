@@ -13,7 +13,8 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.0.1"
+        "guzzlehttp/guzzle": "^7.0.1",
+        "php": "^5.5"
     },
     "extra": {
         "laravel": {
@@ -21,5 +22,6 @@
                 "Codelife\\CodelifeHelpers\\Providers\\HelperServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
