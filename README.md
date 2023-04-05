@@ -6,28 +6,28 @@ You can install this plugin into your Laravel application using [composer](https
 
 The recommended way to install composer packages is:
 
-```
+```shell
 composer require codelife/codelife-helpers
 ```
 
 ### Setting up
 
 Publish migrations using below command: 
-```
+```shell
 php artisan vendor:publish --provider="Codelife\CodelifeHelpers\Providers\HelperServiceProvider" --tag="migrations"
 ```
 
 Then, add the code below to load this package as one of the providers
 Go into your config/app.php directory then paste the following in providers group
 
-```
+```php
 ....Above providers
 Codelife\CodelifeHelpers\Providers\HelperServiceProvider::class,
 ....Below Providers
 ```
 
 Execute artisan command migrate using the below commands to migrate Helpers activity logger table
-```
+```shell
 php artisan migrate
 ```
 
