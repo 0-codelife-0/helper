@@ -13,8 +13,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.0.1",
-        "php": "^5.5"
+        "guzzlehttp/guzzle": "^7.0.1"
     },
     "extra": {
         "laravel": {
@@ -23,5 +22,5 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
