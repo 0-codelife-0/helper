@@ -1,0 +1,25 @@
+{
+    "name": "codelife/codelife-helpers",
+    "description": "This is a codelife helpers made by Jexter Tomas",
+    "autoload": {
+        "psr-4": {
+            "Codelife\\CodelifeHelpers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jexter Tomas",
+            "email": "retxej112600@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codelife\\CodelifeHelpers\\Providers\\HelperServiceProvider"
+            ]
+        }
+    }
+}
