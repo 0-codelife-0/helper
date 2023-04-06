@@ -1,6 +1,6 @@
 {
-    "name": "codelife/codelife-helpers",
-    "description": "This is a codelife helpers made by Jexter Tomas",
+    "name": "codelife/codelife-activity-logger-helper",
+    "description": "This is a activity logger helper made by Jexter Tomas",
     "autoload": {
         "psr-4": {
             "Codelife\\CodelifeHelpers\\": "src/"

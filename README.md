@@ -7,14 +7,14 @@ You can install this plugin into your Laravel application using [composer](https
 The recommended way to install composer packages is:
 
 ```shell
-composer require codelife/codelife-helpers
+composer require codelife/codelife-activity-logger-helper
 ```
 
 If above code does not work try: 
 ```shell
-composer require codelife/codelife-helpers:dev-main
+composer require codelife/codelife-activity-logger-helper:dev-main
 #  OR
-composer require codelife/codelife-helpers:dev-master
+composer require codelife/codelife-activity-logger-helper:dev-master
 ```
 
 ### Setting up
